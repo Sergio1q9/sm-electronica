@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SM Electrónica - Profesional</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <!-- Navbar con logo -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">SM Electrónica</a>
+      <img src="images/logo.png" alt="Logo JM" class="ms-auto logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ofertas">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <section id="inicio" class="mt-3">
+    <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/slide1.jpg" class="d-block w-100" alt="Slide 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Resistencias Surtidas</h5>
+            <p>Pack x100 resistencias 1/4W</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide2.jpg" class="d-block w-100" alt="Slide 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Arduino UNO R3</h5>
+            <p>Microcontrolador para proyectos educativos</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide3.jpg" class="d-block w-100" alt="Slide 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Protoboard 830 Puntos</h5>
+            <p>Ideal para prototipos rápidos</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Productos Destacados -->
+  <section id="productos" class="container my-5">
+    <h2 class="text-center mb-4">Productos Destacados</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Resistencias -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/resistencias.jpg" class="card-img-top" alt="Resistencias">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Resistencias x100</h5>
+            <p class="card-text flex-grow-1">Pack surtido de resistencias de 1/4W.</p>
+            <p class="fw-bold">$500</p>
+            <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Inductores -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/inductores.jpg" class="card-img-top" alt="Inductores">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Inductores SMD</h5>
+            <p class="card-text flex-grow-1">Juego de inductores SMD de alta calidad.</p>
+            <p class="fw-bold">$1200</p>
+            <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Capacitores -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/capacitores.jpg" class="card-img-top" alt="Capacitores">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Capacitores</h5>
+            <p class="card-text flex-grow-1">Pack de capacitores electrolíticos 10uF-100uF.</p>
+            <p class="fw-bold">$800</p>
+            <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Herramientas -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/herramientas.jpg" class="card-img-top" alt="Herramientas">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Kit de Herramientas</h5>
+            <p class="card-text flex-grow-1">Destornilladores, alicates y llaves para electrónica.</p>
+            <p class="fw-bold">$1500</p>
+            <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Cautín -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/cautin.jpg" class="card-img-top" alt="Cautín">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Cautín Profesional</h5>
+            <p class="card-text flex-grow-1">Cautín de temperatura ajustable 60W.</p>
+            <p class="fw-bold">$2500</p>
+            <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ofertas -->
+  <section id="ofertas" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Ofertas Especiales</h2>
+      <div class="d-flex flex-wrap justify-content-evenly gap-4">
+        <div class="card p-3" style="width: 18rem;">
+          <i class="bi bi-percent display-1 text-danger"></i>
+          <h5 class="mt-2">Resistencias x100</h5>
+          <p><strong>$400</strong> <del>$500</del></p>
+          <a href="#" class="btn btn-outline-danger">Ver Oferta</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="container my-5">
+    <h2 class="text-center mb-4">Contacto</h2>
+    <form id="formContacto" class="row g-3">
+      <div class="col-md-6">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" required>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="col-12">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div>© 2025 SM Electrónica</div>
+    <div>
+      <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
